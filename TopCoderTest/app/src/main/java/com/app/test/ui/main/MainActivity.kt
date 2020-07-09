@@ -30,7 +30,6 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>() {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = mAdapter
         }
-
         initData()
     }
 
