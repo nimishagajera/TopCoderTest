@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">TopCoderTest</string>
     <string name="text">TextView</string>
-    <string name="text_no_connectivity">No Connection</string>
+    <string name="text_no_connectivity">Some error occurs.</string>
     <string name="text_connectivity">Back Online</string>
     <string name="text_post_header">Post Header</string>
     <string name="text_retry">Retry</string>

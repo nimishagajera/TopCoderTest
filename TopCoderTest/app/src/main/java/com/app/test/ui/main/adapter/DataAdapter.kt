@@ -12,7 +12,7 @@ import com.app.test.ui.main.holder.DataViewHolder
 /**
  * Adapter class [RecyclerView.Adapter] for [RecyclerView] which binds [Row] along with [DataViewHolder]
  */
-class DataAdapter() : ListAdapter<Row, DataViewHolder>(DIFF_CALLBACK) {
+class DataAdapter : ListAdapter<Row, DataViewHolder>(DIFF_CALLBACK) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = DataViewHolder(
         ItemDataBinding.inflate(
@@ -32,9 +32,8 @@ class DataAdapter() : ListAdapter<Row, DataViewHolder>(DIFF_CALLBACK) {
             override fun areContentsTheSame(oldItem: Row, newItem: Row): Boolean =
                 oldItem == newItem
 
-            override fun areItemsTheSame(oldItem: Row, newItem: Row): Boolean {
-                TODO("Not yet implemented")
-            }
+            override fun areItemsTheSame(oldItem: Row, newItem: Row): Boolean =
+                oldItem.id == newItem.id
         }
     }
 }

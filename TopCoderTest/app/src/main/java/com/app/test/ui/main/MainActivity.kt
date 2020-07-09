@@ -8,11 +8,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.test.R
 import com.app.test.databinding.ActivityMainBinding
 import com.app.test.model.State
+import com.app.test.ui.base.BaseActivity
 import com.app.test.ui.main.adapter.DataAdapter
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
-import dev.shreyaspatil.foodium.ui.base.BaseActivity
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 
 @ExperimentalCoroutinesApi
@@ -30,6 +30,7 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>() {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = mAdapter
         }
+
         initData()
     }
 
@@ -40,9 +41,9 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>() {
                 when (state) {
                     is State.Loading -> showLoading(true)
                     is State.Success -> {
-                    if (state.data.row?.isNotEmpty()!!) {
+                    if (state.data.rows?.isNotEmpty()!!) {
                         mViewBinding.toolbarTitle.text = state.data.title
-                        mAdapter.submitList(state.data.row)
+                        mAdapter.submitList(state.data.rows)
                         showLoading(false)
                         }
                     }
