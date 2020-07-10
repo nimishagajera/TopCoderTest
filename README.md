@@ -1,7 +1,7 @@
 # TopCoderTest
-Created repository for coding test
+Created repository for coding test\
 
-Used below support library for development 
+Used below support library for development \
 1 Kotlin \
 2 Coroutines\
 3 Architecture Components\
@@ -10,4 +10,4 @@ Used below support library for development
 6 Coil-kt\
 7 Retrofit\
 8 Moshi\
-9 Hilt + Dagger\
+9 Hilt + Dagger
