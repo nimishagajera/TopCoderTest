@@ -1,5 +1,5 @@
 # TopCoderTest
-Created repository for coding test\
+Created repository for coding test
 
 Used below support library for development \
 1 Kotlin \
