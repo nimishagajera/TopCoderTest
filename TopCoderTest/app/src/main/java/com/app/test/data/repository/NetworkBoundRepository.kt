@@ -1,17 +1,13 @@
 package com.app.test.data.repository
 
-import android.util.Log
 import androidx.annotation.MainThread
-import androidx.annotation.WorkerThread
 import com.app.test.model.State
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.flow.flow
 import retrofit2.Response
 
 /**
- * A repository which provides resource from local database as well as remote end point.
- *
- * [RESULT] represents the type for database.
+ * A repository which provides resource from remote end point.
  * [REQUEST] represents the type for network.
  */
 @ExperimentalCoroutinesApi

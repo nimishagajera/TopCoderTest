@@ -1,9 +1,11 @@
 
 package com.app.test.ui.main
 
-import android.app.Application
 import androidx.hilt.lifecycle.ViewModelInject
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.app.test.data.repository.DataRepository
 import com.app.test.model.DataResponse
 import com.app.test.model.State
