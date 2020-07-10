@@ -27,7 +27,6 @@
                 android:layout_marginStart="@dimen/dimen_8"
                 android:layout_marginEnd="@dimen/dimen_8"
                 android:gravity="center"
-                android:text="@string/text"
                 android:textColor="@android:color/white" />
 
         </androidx.appcompat.widget.Toolbar>

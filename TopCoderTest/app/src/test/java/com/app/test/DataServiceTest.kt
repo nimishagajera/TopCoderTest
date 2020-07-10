@@ -75,13 +75,13 @@ class DataServiceTest {
     }
 
     @Test
-    fun getPostsTest() = runBlocking {
+    fun getRowTest() = runBlocking {
         enqueueResponse("rows.json")
-        val posts = service.getData().body()
+        val data = service.getData().body()
 
-        assertThat(posts, notNullValue())
-        assertThat(posts!!.row, `is`(2))
-        assertThat(posts.row?.get(0)?.title, `is`("Title 1"))
+        assertThat(data, notNullValue())
+        assertThat(data!!.rows, `is`(2))
+        assertThat(data.rows?.get(0)?.title, `is`("Title 1"))
     }
 
     private fun enqueueResponse(fileName: String, headers: Map<String, String> = emptyMap()) {

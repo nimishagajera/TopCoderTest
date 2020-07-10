@@ -5,19 +5,25 @@
         <item name="android:layout_marginEnd">@dimen/dimen_8</item>
         <item name="android:maxLines">2</item>
         <item name="android:textColor">@color/textColor</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <style name="DataDescText">
         <item name="android:layout_marginStart">@dimen/dimen_16</item>
         <item name="android:layout_marginTop">@dimen/dimen_8</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_8</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_8</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
     <style name="DataImage">
-        <item name="android:layout_marginTop">@dimen/dimen_16</item>
         <item name="android:layout_marginEnd">@dimen/dimen_16</item>
-        <item name="android:layout_marginBottom">@dimen/dimen_16</item>
         <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="View">
+        <item name="backgroundColor">@color/colorPrimaryDark</item>
     </style>
 
     <style name="StatusTextView">

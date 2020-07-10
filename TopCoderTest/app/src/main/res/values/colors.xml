@@ -6,12 +6,9 @@
     <color name="colorAccent">#00838F</color>
     <color name="statusBarColor">@android:color/white</color>
 
-    <color name="textColor">@android:color/black</color>
+    <color name="textColor">#102dce</color>
     <color name="bulbColor">@android:color/black</color>
-    <color name="post_background">@android:color/white</color>
-
+    <color name="row_background">@android:color/white</color>
     <color name="imageBackgroundTint">#C3C3C3</color>
-
-    <color name="colorStatusConnected">#43A047</color>
-    <color name="colorStatusNotConnected">#D32F2F</color>
+    <color name="layoutBackgroundTint">@android:color/darker_gray</color>
 </resources>

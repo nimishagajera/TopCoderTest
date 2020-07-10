@@ -3,7 +3,7 @@
     <string name="text">TextView</string>
     <string name="text_no_connectivity">Some error occurs.</string>
     <string name="text_connectivity">Back Online</string>
-    <string name="text_post_header">Post Header</string>
+    <string name="text_header">Data Header</string>
     <string name="text_retry">Retry</string>
     <string name="exit_dialog_message">Are you sure want to exit?</string>
     <string name="exit_dialog_title">Exit?</string>
