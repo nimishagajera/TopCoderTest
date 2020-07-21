@@ -1,0 +1,15 @@
+{
+  "title": "About Test",
+  "rows": [
+    {
+      "title": "Title 1",
+      "description": "Description 1",
+      "imageHref": "Image URL1"
+    },
+    {
+      "title": "Title 2",
+      "description": "Description 2",
+      "imageHref": "Image URL1"
+    }
+    ]
+}

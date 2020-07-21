@@ -44,7 +44,9 @@ import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
-
+/**
+ * Simple Unit test with dummy data
+ */
 @RunWith(JUnit4::class)
 class DataServiceTest {
     @Rule
@@ -80,7 +82,7 @@ class DataServiceTest {
         val data = service.getData().body()
 
         assertThat(data, notNullValue())
-        assertThat(data!!.rows, `is`(2))
+        assertThat(data!!.rows!!.size, `is`(2))
         assertThat(data.rows?.get(0)?.title, `is`("Title 1"))
     }
 
