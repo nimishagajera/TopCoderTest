@@ -18,6 +18,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/data_desc"
         tools:text="@tools:sample/lorem" />
 
     <TextView
